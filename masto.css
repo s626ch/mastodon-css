@@ -1,0 +1,668 @@
+/* custom mastodon css yippiee */
+:root {
+    --wallpaper: url(https://smolyoshino.lol/myspace/zoey/night-time-stitch.png), url(https://stitch.has-no-bra.in/HzzHPz.png);
+    --wpblur: url(https://smolyoshino.lol/myspace/zoey/night-time-stitch-distort.png), url(https://stitch.has-no-bra.in/mF6gyX.png);
+    --sblue: #6ac6e0;
+    --preloadCol: #002152;
+    --preloadCol2: #00215250;
+    --sbluehalf: #6ac6e050;
+    --darkCol: #00000050;
+    --darkCol2: #000000ab;
+}
+
+body {
+    background-image: var(--wallpaper);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--preloadCol);
+}
+body:after{
+    display:block;
+    width:100%;height:100%;
+    content:" ";
+    background-color: var(--darkCol);
+    position: fixed;
+    top: 0;
+    z-index: -5;
+}
+.link-footer {
+    height:40px;
+    -webkit-transition: .25s ease-in-out;
+    transition: height .25s ease-in-out;
+    position:absolute;
+    bottom:0;
+    border: 2px solid var(--sblue);
+    margin-left: -2px;
+    margin-right: -4px;
+}
+.getting-started__trends {
+    position: absolute;
+    bottom: 0;
+    border: 2px solid var(--sblue);
+    margin-left: -1px;
+    width: calc(100% - 5px);
+}
+.link-footer:hover {
+    height: 112px;
+}
+.link-footer p {
+    color:white;
+}
+.link-footer a span {
+    color: var(--sblue);
+}
+.compose-panel .compose-form__autosuggest-wrapper, .compose-form .autosuggest-textarea__textarea, .compose-form .spoiler-input__input, .compose-form .compose-form__modifiers, .compose-form .compose-form__buttons-wrapper, .compose-panel .navigation-bar, .navigation-panel, .compose-panel, .link-footer, .search__input, .getting-started__trends {
+    background-color: var(--darkCol);
+}
+.compose-panel .autosuggest-textarea__textarea, .icon-button.inverted, .text-icon-button, .search__input, .search-popout em {
+    color:white;
+}
+.icon-button.inverted:active, .icon-button.inverted:focus, .icon-button.inverted:hover, .text-icon-button:active, .text-icon-button:focus, .text-icon-button:hover, .character-counter, .search__icon .fa-times-circle, .search-popout {
+    color: var(--sblue);
+}
+.search__icon .fa.active {
+    opacity: 0.75;
+}
+.search__input{
+    -webkit-transition: .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+}
+.search__input:focus, .search-popout {
+    background-color: var(--preloadCol);
+}
+.compose-panel .compose-form__autosuggest-wrapper, .compose-form .compose-form__buttons-wrapper, .navigation-bar, .search-popout {
+    border: 2px solid var(--sblue);
+    border-radius: 0;
+}
+.navigation-bar, .search-popout {
+    border-left: 0px;
+    border-right: 0px;
+}
+.compose-panel .compose-form__autosuggest-wrapper {
+    border-bottom: 0px;
+}
+@media screen and (min-width: 1175px) {
+    .columns-area__panels__main {
+        padding: 0 10px;
+        max-width: 50%;
+    }
+    .getting-started__wrapper, .search {
+        margin-bottom: 0px;
+    }
+    .navigation-panel, .compose-panel {
+        height:unset;
+        border: 2px solid var(--sblue);
+    }
+    /*body {
+        font-family: "MS PGothic", "Meiryo", メイリオ, "Hiragino Kaku Gothic ProN", ヒラギノ角ゴ Pro W3, courier, monospace !important;
+    }*/
+}
+.account__header__image {
+    height:unset;
+}
+.compose-form .compose-form__publish .compose-form__publish-button-wrapper {
+    padding-bottom: 15px;
+}
+/* fix for no banner mfs */
+.account__header__image img[src$="missing.png"] {
+    height: 200px;
+}
+.media-gallery__item-thumbnail img {
+    object-fit: contain;
+}
+.column-link--logo svg {
+    display: none;
+}
+.column-link--logo, .column-link--logo:hover {
+    display:block;
+    background-image: url("https://liloandstit.ch/mastolns.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 32px;
+    margin: 16px;
+}
+.navigation-panel hr {
+    border-top: 2px solid var(--sblue);
+    margin: 0;
+}
+.dropdown-menu, .dropdown-menu__item a, .dropdown-menu__item button, .emoji-mart-scroll, .emoji-mart-category-label span, .emoji-picker-dropdown__menu, .emoji-mart-bar:first-child, .emoji-mart-search {
+    background: var(--preloadCol);
+    color: var(--sblue);
+}
+.dropdown-menu__arrow.bottom {
+    border-bottom-color: var(--preloadCol);
+}
+.emoji-mart-search input, .compose-form .spoiler-input__input {
+    color: white;
+}
+.tabs-bar__wrapper {
+    background: transparent;
+}
+.getting-started__trends h4 {
+    color: white;
+    border-bottom: 2px solid var(--sblue);
+}
+.trends__item__name, .account__header__bio .account__header__fields dd, .account__header__bio .account__header__fields a, .account__section-headline a, .notification__filter-bar span, .status__content .status__content__spoiler-link:hover {
+    color: var(--sblue);
+}
+.trends__item__name a, .account__section-headline a.active, .notification__filter-bar .active span, .status__content .status__content__spoiler-link {
+    color: white;
+}
+.dismissable-banner {
+    background: var(--darkCol);
+    border-bottom: 0px;
+}
+.account__section-headline a.active, .notification__filter-bar .active span {
+    text-decoration: underline;
+}
+.column-header, .detailed-status__action-bar, .column-back-button {
+    background: var(--darkCol2);
+    border-radius: 0;
+    border: 2px solid var(--sblue);
+}
+.account__header__account-note textarea:focus {
+    background: var(--sbluehalf);
+}
+.notification__filter-bar button {
+    background: inherit;
+}
+.column-header__button {
+    background: var(--darkCol);
+    border-left: 2px solid var(--sblue);
+}
+.status, .detailed-status, .account__header {
+    border: 2px solid var(--sblue);
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+}
+.status__prepend, .notification__message {
+    border: 0;
+    background: var(--darkCol);
+    padding: 16px;
+    color: var(--sblue);
+}
+.notification__message {
+    border-top: 2px solid var(--sblue);
+}
+.notification .account {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0px;
+}
+div[aria-label="Notifications"] .status.status-public.status-reply {
+    /*border-bottom: 0;
+    border-top: 2px solid var(--sblue);*/
+    among: us;
+}
+div[aria-label="Notifications"] .status.status-public.status-reply.muted {
+    border-bottom: 2px solid var(--sblue);
+    border-top: 0;
+}
+div[aria-label="Notifications"] .scrollable {
+    border-top: 0px;
+}
+.account__section-headline {
+    background: var(--darkCol);
+    border: 2px solid var(--sblue);
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+}
+div[aria-label="Notifications"] .item-list article .notification .notification__message {
+    margin-top: -2px;
+}
+.notification__filter-bar {
+    border: 2px solid var(--sblue);
+    background: var(--darkCol);
+}
+.account__section-headline a.active:after, .notification__filter-bar button.active:after {
+        border-color: transparent transparent var(--sblue);
+}
+.status__prepend .status__display-name strong, .account__header__bio .account__header__fields dt {
+    color:white;
+}
+.status__prepend .status__display-name strong img {
+    opacity: 1;
+}
+.column>.scrollable, .media-gallery__item, .detailed-status, .account__header, .account__header__image, .account__header__bar .avatar .account__avatar, .account__header__bio .account__header__fields {
+    background: var(--darkCol);
+    border-radius: 0px;
+}
+.account__header__image, .account__header__bio .account__header__fields dl {
+    border-bottom: 2px solid var(--sblue);
+}
+.status__display-name, .status__relative-time {
+    color: var(--sblue);
+}
+.detailed-status {
+    border-bottom: 0px;
+}
+.detailed-status__action-bar {
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+}
+.columns-area {
+    margin-top: -2px;
+}
+.column {
+    margin-bottom: -2px;
+}
+.column>.scrollable {
+    /*border-top: 2px solid var(--sblue);*/
+    border: 2px solid var(--sblue);
+}
+.account__header__tabs .account__avatar {
+    width: 160px !important;
+    height: 160px !important;
+}
+.account__header__bar .avatar .account__avatar {
+    border: 2px solid var(--sblue);
+}
+.account__header__bar .avatar {
+    margin-left: 0px;
+}
+.account__header__bio .account__header__fields {
+    border: 2px solid var(--sblue);
+    border-bottom: 0px;
+}
+.account__header__bio .account__header__fields .verified:last-child {
+    border-bottom: 2px solid var(--sblue);
+    border-radius: 0px;
+}
+.account__header__bio .account__header__fields .verified {
+    border-top: 1px solid var(--sblue);
+    border: 0px;
+    border-bottom: 2px solid var(--sblue);
+}
+.account__header__bio .account__header__fields .verified:last-child {
+    border-bottom: 2px solid var(--sblue);
+    border-radius: 0px;
+}
+.account__header__bio .account__header__fields .verified {
+    border-top: 1px solid var(--sblue);
+    border: 0px;
+    border-bottom: 2px solid var(--sblue);
+}
+.follow_requests-unlocked_explanation, .explore__search-header, .conversation {
+    border: 2px solid var(--sblue);
+    background: var(--darkCol);
+}
+.empty-column-indicator {
+    border-bottom: 2px solid var(--sblue);
+    background: var(--darkCol);
+}
+.explore__search-header {
+    border-bottom: 0px;
+}
+.conversation--unread {
+    background: var(--preloadCol2);
+}
+.conversation, .follow_requests-unlocked_explanation {
+    border-top: 0px;
+}
+.column-header__buttons .column-header__back-button {
+    background: var(--darkCol);
+    border-left: 2px solid var(--sblue);
+    padding: 15px;
+}
+div[aria-label="Lists"] .empty-column-indicator {
+    border-top: 0px;
+}
+.column-inline-form {
+    background: var(--darkCol);
+    border-left: 2px solid var(--sblue);
+    border-right: 2px solid var(--sblue);
+}
+.column-inline-form .setting-text {
+    background: var(--darkCol);
+    color: white;
+    border: 2px solid var(--sblue);
+    border-radius: 0;
+}
+.account__avatar-composite {
+    border-radius: 4px;
+}
+.about__meta__divider {
+    border-left: 2px solid var(--sblue);
+    margin: 0;
+}
+.about__section__body {
+    border: 2px solid var(--sblue);
+    border-top: 0;
+}
+.timeline-hint {
+    border: 2px solid var(--sblue);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.scrollable.about {
+    border: 2px solid var(--sblue);
+    margin-top: 2px;
+    border-bottom: 4px solid var(--sblue);
+}
+.about__header__hero {
+    border-radius: 0;
+}
+.about__meta, .about__section__title, .about__domain-blocks {
+    background: var(--darkCol);
+    border: 2px solid var(--sblue);
+    border-radius: 0;
+}
+.about__section .about__section__title, .about__section.active .about__section__title {
+    border-radius: 0;
+    color: var(--sblue);
+}
+.rules-list li {
+    border-bottom: 2px solid var(--sblue);
+}
+.rules-list li:before {
+    background: var(--sblue);
+}
+@media screen and (max-width: 1174px) {
+    .columns-area__panels__pane--navigational .navigation-panel {
+        background: var(--darkCol);
+        border-left: 0px;
+        border-top: 2px solid var(--sblue);
+    }
+    div[aria-label="About"] .scrollable {
+        border: 2px solid var(--sblue);
+        margin-top: 2px;
+    }
+    .about .link-footer {
+        position: unset;
+        height: unset;
+        padding: 15px;
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .getting-started__trends {
+        position: unset;
+        bottom: unset;
+        margin-left: unset;
+        width: unset;
+    }
+}
+.empty-column-indicator .timeline-hint {
+    border: 0;
+}
+button.load-gap {
+    border: 2px solid var(--sblue);
+    border-top: 0px;
+}
+button.load-more:hover {
+    background: var(--preloadCol2);
+}
+.column-header__collapsible-inner {
+    background: transparent;
+}
+.column-header__collapsible {
+    border-left: 2px solid var(--sblue);
+    border-right: 2px solid var(--sblue);
+    background: var(--preloadCol2);
+}
+.focusable:focus {
+    background: var(--sbluehalf);
+}
+.column-header>.column-header__back-button {
+    color: white;
+}
+.server-banner {
+    padding: 12px;
+    border-top: 2px solid var(--sblue);
+}
+.status .status-card.compact {
+    border: 2px solid var(--sblue);
+    border-radius: 0;
+}
+.status .status-card.compact img {
+    border-radius: 0;
+}
+.status-card {
+    border: 2px solid var(--sblue);
+    color: var(--sblue);
+}
+.status-card__title {
+    color: white;
+}
+.status-card, .status-card img {
+    border-radius: 0;
+}
+.button {
+    background: var(--sblue);
+    color: black;
+}
+.button.button-tertiary {
+    border-color: var(--sblue);
+    color: var(--sblue);
+}
+.button.button-tertiary:hover {
+    border-color: var(--sblue);
+    background: var(--sblue);
+    color: black;
+}
+
+/* login, sign up */
+body.lighter {
+    background-image: var(--wallpaper);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--preloadCol);
+}
+.container-alt {
+    position: absolute;
+    background: var(--darkCol);
+    border: 2px solid var(--sblue);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-container svg {
+    display: none;
+}
+.logo-container {
+    display:block;
+    background-image: url("https://liloandstit.ch/mastolns.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 96px;
+    margin: 32px;
+}
+.simple_form button, .simple_form .button {
+    background: var(--sblue);
+    color: black;
+}
+.simple_form .button.button-tertiary {
+    border-color: var(--sblue);
+    color: var(--sblue);
+    background: transparent;
+}
+.simple_form .button.button-tertiary:hover {
+    border-color: var(--sblue);
+    background: var(--sblue);
+    color: black;
+}
+/* edit modal etc */
+.actions-modal, .block-modal, .boost-modal, .compare-history-modal, .confirmation-modal, .mute-modal, .report-modal, .setting-text__wrapper {
+    background: var(--darkCol2);
+    color: white;
+    border: 2px solid var(--sblue);
+    border-radius: 0;
+}
+.report-modal__comment .setting-text-label {
+    color: var(--sblue);
+}
+.setting-text {
+    background: transparent;
+    color: white;
+}
+.report-modal__comment {
+    border-right: 2px solid var(--sblue);
+}
+.report-modal__container {
+    border-top: 2px solid var(--sblue);
+}
+.focal-point__preview {
+    border: 2px solid var(--sblue);
+    padding: 6px;
+    border-right: 0;
+    border-bottom: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+}
+
+/* height fixes */
+.reply-indicator {
+    background: var(--sblue);
+    max-height: 128px;
+}
+.compose-panel .compose-form {
+    max-height: 640px !important;
+}
+.account__section-headline button, .notification__filter-bar button {
+    background: var(--darkCol);
+}
+.account__section-headline button.active:after {
+    border-color: transparent transparent var(--sblue);
+}
+.account {
+    border-bottom: 2px solid var(--sblue);
+}
+
+.notification.unread:before, .status__wrapper.unread:before {
+    border-left: 10px solid var(--sbluehalf);
+}
+/* ongod... */
+@media screen and (max-width: 631px) {
+    .columns-area {
+        overflow-y: hidden;
+    }
+}
+@media screen and (max-width: 1174px) {
+    .ui__header {
+        background: var(--sbluehalf);
+        border:0;
+    }
+    .columns-area--mobile {
+        border:2px solid var(--sblue);
+        width: calc(100% - 4px);
+        margin-top:0;
+        border-top: 0;
+    }
+    .compose-form .compose-form__autosuggest-wrapper {
+        border: 2px solid var(--sblue);
+        border-bottom: 0;
+    }
+    .notification__filter-bar {
+        border-left:0;
+        border-right:0;
+        border-top:0;
+    }
+    .column>.scrollable {
+        border: 0;
+    }
+    .scrollable.about {
+        border:0!important;
+        border-top:2px solid var(--sblue) !important;
+        margin-top:0!important;
+    }
+    .column-inline-form {
+        border-bottom: 2px solid var(--sblue);
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+.ui__header__logo svg {
+    display: none;
+}
+.ui__header__logo {
+    display:block;
+    background-image: url("https://liloandstit.ch/mastolns.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 128px;
+    margin: 12px;
+}
+
+.compose-form .autosuggest-textarea__textarea, .compose-form .spoiler-input__input {
+    color: white;
+    background: var(--darkCol);
+}
+
+.upload-progress__tracker, .confirmation-modal__action-bar {
+    background: var(--sblue);
+}
+
+.about__domain-blocks__domain {
+    border-bottom: 2px solid var(--sblue);
+}
+
+.about__domain-blocks__domain:nth-child(2n) {
+    background: var(--sbluehalf);
+}
+
+/* personal safety */
+#mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div:nth-child(5) > div.about__section__body > div > div:nth-child(2) > div > h6 > span {
+    font-size:0;
+    user-select: none;
+}
+#mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div:nth-child(5) > div.about__section__body > div > div:nth-child(2) > div > h6 > span:after {
+    font-size:15px;
+    content:"s*********.cloud";
+    cursor: text;
+}
+#mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div:nth-child(5) > div.about__section__body > p > span:after {
+    content:" BECAUSE YOU FUCKERS COULDN'T PLAY NICE. and because i'm a very fragile little creature :("
+}
+
+/* lol oop s */
+.notification-follow {
+    border-bottom: 2px solid var(--sblue);
+}
+/* why is this not the default...???? */
+.upload-area {
+    position: fixed;
+}
+
+.circular-progress {
+    color: var(--sblue);
+}
+.icon-with-badge__badge {
+    background: var(--sblue);
+    color: black;
+}
+
+/* dawg can i just see full links ffs */
+.invisible {
+    font-size: unset;
+    position:unset;
+    line-height:unset;
+    width:unset;
+    display:unset;
+    height:unset;
+}
+.ellipsis::after {
+    content: "";
+}
+
+.admin-wrapper .content__heading__tabs a.selected {
+    background: var(--sbluehalf);
+}
+.admin-wrapper .content__heading__tabs a.selected:hover {
+    background: var(--sblue);
+}
+
+.focusable:focus .detailed-status, .focusable:focus .detailed-status__action-bar {
+    background: var(--darkCol);
+}
