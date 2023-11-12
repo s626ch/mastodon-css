@@ -678,6 +678,6 @@ body.lighter {
 }
 
 /* you too tall */
-.media-gallery {
+.media-gallery, .video-player {
     max-height:512px;
 }
