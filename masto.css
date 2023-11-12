@@ -678,6 +678,9 @@ body.lighter {
 }
 
 /* you too tall */
-.media-gallery, .video-player {
+.media-gallery, div:has(> .video-player) {
     max-height:512px;
+}
+div:has(> .video-player) {
+    margin:auto;
 }
