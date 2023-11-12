@@ -1,5 +1,15 @@
 /* custom mastodon css yippiee */
 :root {
+    --pointer-cur: 
+            url("https://smolyoshino.lol/myspace/zoey/pointer.png"),
+            url("https://zoey.has-no-bra.in/MKmBZv.png"),
+	    url("https://www.windows93.net/c/sys/cursors/pointer.cur"),
+	    pointer;
+    --default-cur:
+            url("https://smolyoshino.lol/myspace/zoey/default.png"),
+            url("https://zoey.has-no-bra.in/M11VKa.png"),
+            url("https://www.windows93.net/c/sys/cursors/default.cur"),
+            default;
     --wallpaper: url(https://smolyoshino.lol/myspace/zoey/night-time-stitch.png), url(https://stitch.has-no-bra.in/HzzHPz.png);
     --wpblur: url(https://smolyoshino.lol/myspace/zoey/night-time-stitch-distort.png), url(https://stitch.has-no-bra.in/mF6gyX.png);
     --sblue: #6ac6e0;
@@ -665,4 +675,9 @@ body.lighter {
 
 .focusable:focus .detailed-status, .focusable:focus .detailed-status__action-bar {
     background: var(--darkCol);
+}
+
+/* you too tall */
+.media-gallery {
+    max-height:512px;
 }
