@@ -712,7 +712,7 @@ div:has(> .video-player) {
 .layout-multiple-columns .compose-form .navigation-bar {border:0;}
 .reply-indicator__line::before{background:var(--sblue);}
 .layout-multiple-columns .compose-form__highlightable{border:2px solid var(--sblue); border-radius:0;background:var(--darkCol);}
-#mastodon .account__header__account-note, #mastodon .account__header__fields {
+#mastodon .account__header__fields {
   display: flex;
   flex-wrap: wrap;
   border:1px solid var(--sblue);
