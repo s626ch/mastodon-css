@@ -736,3 +736,10 @@ div:has(> .video-player) {
 }
 .layout-multiple-columns .search-results__section__header {background:var(--preloadCol2);}
 .layout-multiple-columns .search-results {background:var(--accent);}
+.layout-multiple-columns .timeline-hint {border-right:2px solid var(--sblue);border-bottom:0;}
+.layout-multiple-columns .account__header, .layout-multiple-columns .account__disclaimer, .layout-multiple-columns .account__action-bar, .layout-multiple-columns .account__section-headline {border-right:2px solid var(--sblue);}
+.layout-multiple-columns .account__disclaimer{background:var(--accent);}
+.layout-multiple-columns .account__action-bar {border-bottom:2px solid var(--sblue);border-top:2px solid var(--sblue);}
+.layout-multiple-columns .account__action-bar__tab.active {background:var(--sbluehalf);}
+.layout-multiple-columns .account__action-bar__tab {border-left:2px solid var(--sblue);}
+.layout-multiple-columns .account__action-bar__tab:first-of-type {border-left:0}
