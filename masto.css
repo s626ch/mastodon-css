@@ -743,3 +743,4 @@ div:has(> .video-player) {
 .layout-multiple-columns .account__action-bar__tab.active {background:var(--sbluehalf);}
 .layout-multiple-columns .account__action-bar__tab {border-left:2px solid var(--sblue);}
 .layout-multiple-columns .account__action-bar__tab:first-of-type {border-left:0}
+.column-header__title {padding: 13px 0 11px 13px;}
