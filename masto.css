@@ -734,3 +734,5 @@ div:has(> .video-player) {
 #mastodon .account__header__account-note dl.verified, #mastodon .account__header__fields dl.verified{
     border-top:2px solid var(--sblue);
 }
+.layout-multiple-columns .search-results__section__header {background:var(--preloadCol2);}
+.layout-multiple-columns .search-results {background:var(--accent);}
