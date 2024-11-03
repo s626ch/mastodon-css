@@ -1,7 +1,6 @@
 /* custom mastodon css yippiee */
 :root {
-    --wallpaper: url(https://i-love.liloandstit.ch/system/media_attachments/files/112/313/484/551/290/460/original/f32bbd021b9cedec.png);
-    --wpblur: url(https://i-love.liloandstit.ch/system/media_attachments/files/112/313/484/525/616/721/original/e21117a446d4f62b.png);
+    --wallpaper: url(https://minio.dietpi.snep.lol/stitch-mastodon/media_attachments/files/113/418/209/821/296/732/original/053df7176411f2c9.png);    
     --sblue: #6ac6e0;
     --preloadCol: #002152;
     --accent:#031023;
@@ -744,3 +743,5 @@ div:has(> .video-player) {
 .layout-multiple-columns .account__action-bar__tab {border-left:2px solid var(--sblue);}
 .layout-multiple-columns .account__action-bar__tab:first-of-type {border-left:0}
 .column-header__title {padding: 13px 0 11px 13px;}
+.status__line {border-inline-start: 2px solid var(--sblue);}
+.notification-ungrouped {border-bottom: 2px solid var(--sblue);}
