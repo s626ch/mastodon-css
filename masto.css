@@ -28,7 +28,7 @@ body:after{
     z-index: -5;
 }
 .link-footer {
-    height:40px;
+    height:16px;
     -webkit-transition: .25s ease-in-out;
     transition: height .25s ease-in-out;
     position:absolute;
@@ -52,7 +52,7 @@ body:after{
     border-top: 0;
 }
 .link-footer:hover {
-    height: 112px;
+    height: 8vh;
 }
 .link-footer p {
     color:white;
@@ -745,3 +745,4 @@ div:has(> .video-player) {
 .column-header__title {padding: 13px 0 11px 13px;}
 .status__line {border-inline-start: 2px solid var(--sblue);}
 .notification-ungrouped {border-bottom: 2px solid var(--sblue);}
+.account__avatar, .account__avatar img {border-radius:0;}
