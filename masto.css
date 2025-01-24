@@ -746,3 +746,6 @@ div:has(> .video-player) {
 .status__line {border-inline-start: 2px solid var(--sblue);}
 .notification-ungrouped {border-bottom: 2px solid var(--sblue);}
 .account__avatar, .account__avatar img {border-radius:0;}
+@media screen and (min-width: 1500px) {
+    .column, .drawer {flex: 1 1 100% !important;}
+}
